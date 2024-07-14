@@ -39,7 +39,14 @@ function App() {
         <option value="">Filter by Type...</option>
         <option value="Grass">Grass</option>
         <option value="Fire">Fire</option>
-        {/* Add other types as needed */}
+        <option value="Ice">Ice</option>
+        <option value="Water">Water</option>
+        <option value="Ground">Ground</option>
+        <option value="Psychic">Psychic</option>
+        <option value="Electric">Electric</option>
+        <option value="Flying">Flying</option>
+        <option value="Rock">Rock</option>
+        <option value="Fighting">Fighting</option>
       </select>
 
       {/* Filter by Weakness */}
@@ -50,9 +57,17 @@ function App() {
         <option value="">Filter by Weakness...</option>
         <option value="Grass">Grass</option>
         <option value="Fire">Fire</option>
+        <option value="Ice">Ice</option>
+        <option value="Water">Water</option>
+        <option value="Ground">Ground</option>
+        <option value="Psychic">Psychic</option>
+        <option value="Electric">Electric</option>
+        <option value="Flying">Flying</option>
+        <option value="Rock">Rock</option>
+        <option value="Fighting">Fighting</option>
       </select>
 
-      {/* Display Pokemon */}
+      {/* Pokemon that Displays*/}
       <div className="pokemon-list">
         {pokemonList
           .filter((pokemon) =>
