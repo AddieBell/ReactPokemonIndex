@@ -71,9 +71,6 @@ function App() {
       <div className="pokemon-list">
         {pokemonList
           .filter((pokemon) =>
-            pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
-          )
-          .filter((pokemon) =>
             typeFilter ? pokemon.type.includes(typeFilter) : true
           )
           .filter((pokemon) =>
