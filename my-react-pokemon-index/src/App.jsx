@@ -76,6 +76,11 @@ function App() {
           .filter((pokemon) =>
             weaknessFilter ? pokemon.weaknesses.includes(weaknessFilter) : true
           )
+          .filter((pokemon) =>
+            searchTerm
+              ? pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
+              : true
+          )
           .map((pokemon) => (
             <div key={pokemon.id} className="pokemon-card">
               <h2>{pokemon.name}</h2>
